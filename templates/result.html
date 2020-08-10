@@ -1,4 +1,5 @@
   
+  
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
@@ -20,15 +21,108 @@
     			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
     		</div>
     	</div>
+    	
+    	<!-- Prediction Area -->
+        <div class="prediction-area">
 
-		<!-- Result -->
-		<div class="results">
-				<br>
-                <br>
-               {{ prediction }}
-		</div>
+            <!-- IPL Banner - 1 -->
+            <div class='gold-banner-left'>
 
-		<!-- Footer -->
+                <div class="slider-frame">
+                    <div class="slide-images-up">
+
+                        <!-- Image-1 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img1.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img2.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img3.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img4.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img5.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img6.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-7 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img7.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-8 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img8.jpg') }}" alt="Gold">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <!-- Result -->
+    		<div class="results">
+    				<br>
+                    <br>
+                   {{ prediction }}
+    		</div>
+            
+
+            <!-- IPL Banner - 2 -->
+            <div class='gold-banner-right'>
+
+                <div class="slider-frame">
+                    <div class="slide-images-down">
+
+                        <!-- Image-1 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img1.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img2.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img3.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img4.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img5.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img6.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-7 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img7.jpg') }}" alt="Gold">
+                        </div>
+                        <!-- Image-8 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='img8.jpg') }}" alt="Gold">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    	<!-- Footer -->
        <div class='footer'>
            <div class="contact">
                <a target="_blank" href="https://github.com/sukilsiva/Gold-Price-Predictor"><i class="fab fa-github fa-lg contact-icon"></i></a>
