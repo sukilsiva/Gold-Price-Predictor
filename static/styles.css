@@ -3,57 +3,49 @@ html{
 	margin: 0;
 }
 
+
 body{
-	font-family: Arial, Helvetica,sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
 	height: 100%;
-	display: flex;
-	flex-direction: column;
+	margin: 0;
+	background-color: #ffffff;
 }
 
 /* Website Title */
 .container{
-    padding: 30px;
-	position: relative;
 	background-color: #772f1a;
     background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
-	background-size: 500% 500%;
-	animation: change-gradient 10s ease-in-out infinite;
-}
-@keyframes change-gradient {
-	0%{
-		background-position: 0 50%;
-	}
-	50%{
-		background-position: 100% 50%;
-	}
-	100%{
-		background-position: 0 50%;
-	}
+    padding: 20px;
+	display: block;
+	text-align: center;
 }
 
 .container-heading{
     margin: 0;
 }
 
+
 .heading_font{
-    color: #772f1a;
-	font-family: 'Pacifico', cursive;
-	font-size: 35px;
-	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-style: italic;
 }
 
 .description p{
-	color: #772f1a;
     font-style: italic;
-    font-size: 14px;
-    margin: -5px 0 0;
+    font-size: 12px;
+	font-weight: 100;
+    margin: 0;
 }
 
-/* Left Banner */
+/* Prediction Area */
+.prediction-area{
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px 40px;
+}
+
 .gold-banner-left{
 	display: inline-block;
 	position: absolute;
@@ -67,13 +59,13 @@ body{
 	box-shadow: 7px 6px 18px -2px rgba(94,94,94,0.61);
 }
 
-/* Text Area */
-.ml-container{
-    margin: 30px 0;
-	flex: 1 0 auto;
+.ml-container, .results{
+	display: inline-block;
+	width: auto;
+	height: 429px;
+	text-align: center;
 }
 
-/* Right Banner*/
 .gold-banner-right{
 	display: inline-block;
 	width: 284px;
@@ -165,71 +157,86 @@ body{
 	float: none;
 }
 
-.form-input {
+/* Form */
+.form-input{
+	background-color: #772f1a;
+	width: 370px;
+	height: 30px;
+	border-radius: 3px;
+	border: 0;
 	text-align: center;
-	width: 350px;
-	height: 25px;
-	margin-bottom: 5px;
+	-webkit-box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+	box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+	margin-bottom: 15px;
+}
+
+.align-center{
+	padding: 0 30px;
 }
 
 /* Predict Button */
 .my-cta-button{
-	background: #f9f9f9;
-   	border: 2px solid #000000;
-    border-radius: 1000px;
-    box-shadow: 3px 3px #8c8c8c;
+	background-color:#0c0c0c;
+	border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 30px;
 	margin-top: 10px;
-    padding: 10px 36px;
-    color: #000000;
-    display: inline-block;
-   	font: italic bold 20px/1 "Calibri", sans-serif;
-    text-align: center;
+	text-decoration:none;
+	transition: 0.5s ease-out;
 }
 
 .my-cta-button:hover{
-    color: #4d089a;
-    border: 2px solid #4d089a;
+	background-color: #E9E9E9;
+	color: #000000;
+	box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
 }
 
-.my-cta-button:active{
-    box-shadow: 0 0;
+.myButton:active {
+	position:relative;
+	top:1px;
 }
 
-/* Contact */
+/* Footer */
+.footer{
+	background-color: #772f1a;
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+	color: #772f1a;
+	padding: 12px;
+    text-align: center;
+}
+
 .contact-icon{
 	color: #772f1a;
 	padding: 7px;
 }
 
 .contact-icon:hover{
-	color: #8c8c8c;
-}
-
-/* Footer */
-.footer{
-	flex-shrink: 0;
-	position: relative;
-	padding: 20px;
-	background-color: #772f1a;
-    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
-	background-size: 500% 500%;
-	animation: change-gradient 10s ease-in-out infinite;
+	color: #772f1a;
 }
 
 .footer-description{
-	color: #772f1a;
 	margin: 0;
 	font-size: 12px;
+	font-weight: 100;
 }
 
 /* Result */
 .results{
-    padding: 30px 0 0;
-	flex: 1 0 auto;
+  display: inline-block;
+  width: auto;
+  height: 429px;
+  line-height: 400px;
+  text-align: center;
 }
 
 .danger{
-    color: #ff0000;
+    color: #772f1a0;
 }
 
 .safe{
@@ -241,6 +248,5 @@ body{
 }
 
 .gif1{
-	width: 35%;
-    	margin: 10px 0;
+	width: 40%;
 }
