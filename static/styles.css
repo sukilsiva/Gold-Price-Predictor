@@ -50,7 +50,7 @@ body{
 	display: inline-block;
 	position: absolute;
 	left: 40px;
-	top: -5px;
+	top: -25px;
 	width: 284px;
 	height: 429px;
 	border-radius: 15px;
@@ -72,7 +72,7 @@ body{
 	height: 429px;
 	position: absolute;
 	right: 40px;
-	top: -5px;
+	top: -25px;
 	border-radius: 15px;
 	-webkit-box-shadow: 7px 6px 18px -2px rgba(94,94,94,0.61);
 	-moz-box-shadow: 7px 6px 18px -2px rgba(94,94,94,0.61);
