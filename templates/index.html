@@ -16,7 +16,7 @@
     	<div class="container">
             <h2 class='container-heading'><span class='heading_first'>Gold Price</span><span class="heading_second">Predictor in (INR)</span></h2>
             <div class='description'>
-    			<p>Give first 5 Days Gold Rates and Get the 6th Day Rate.</p>
+    			<p>Give Gold Rates for This Week and Get the Rates for Next Week.</p>
     		</div>
     	</div>
 
@@ -71,11 +71,14 @@
                   
          	<div class="ml-container">
         		<form action="{{ url_for('predict') }}" method="POST">
-                    <input class="form-input" type="text" name="Day1" placeholder="Rate of Gold in INR eg. 29877"><br>
-                    <input class="form-input" type="text" name="Day2" placeholder="Rate of Gold in INR eg.30455"><br>
-                    <input class="form-input" type="text" name="Day3" placeholder="Rate of Gold in INR eg. 30560"><br>
-                    <input class="form-input" type="text" name="Day4" placeholder="Rate of Gold in INR eg. 30351"><br>
-                    <input class="form-input" type="text" name="Day5" placeholder="Rate of Gold in INR eg. 30354"><br>
+                    <input class="form-input" type="text" name="Day7" placeholder="Rate of Gold in Sunday (INR) eg. 30354"><br>
+                    <input class="form-input" type="text" name="Day1" placeholder="Rate of Gold in Monday (INR) eg. 29877"><br>
+                    <input class="form-input" type="text" name="Day2" placeholder="Rate of Gold in Tuesday (INR) eg.30455"><br>
+                    <input class="form-input" type="text" name="Day3" placeholder="Rate of Gold in Wednesday (INR) eg. 30560"><br>
+                    <input class="form-input" type="text" name="Day4" placeholder="Rate of Gold in Thursday (INR) eg. 30351"><br>
+                    <input class="form-input" type="text" name="Day5" placeholder="Rate of Gold in Friday (INR) eg. 30354"><br>
+                    <input class="form-input" type="text" name="Day6" placeholder="Rate of Gold in Saturday (INR) eg. 30351"><br>
+                    
 
                 
             		<input type="submit" class="my-cta-button" value="Predict">
